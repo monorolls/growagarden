@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,431 +41,208 @@
   margin: 0 auto;      
 }
   </style>
-
     <div class="header">
-        <h1 class="fix-stroke">[🐝] Grow a Garden 🌻</h1>
-        <h2 class="fix-stroke"> Generator</h2>
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/logo3.webp" alt="Logo" class="logo">
+        <h2 class="fix-stroke">Fruit/Pets Generator</h2>
         <input type="text" id="username" placeholder="Enter Username">
         <div id="warning-username" class="warning" style="display:none;"></div>
         <button class="fix-stroke" id="generate">Generate!</button>
     </div>
 
-<p class="small-text">Choose the items you want to get:</p>
-<div id="warning-pet-limit" class="warning" style="display:none;">You can only select up to 3 items!</div>
-<div id="warning-no-pet" class="warning" style="display:none;">Please select at least one item!</div>
+    <p class="small-text">Browse through the available fruits/pets:</p>
+    <div id="warning-pet-limit" class="warning" style="display:none;">You can only select up to 3 fruits/pets!</div>
+    <div id="warning-no-pet" class="warning" style="display:none;">Please select at least one fruit/pets!</div>
 
-<div class="card-container">
-    <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/FrogV2.webp" alt="Massive Frog (27.31 kg)">
-    <div class="card-content">
-        <h3 class="fix-stroke">Massive Frog</h3>
-    </div>
-</div>
-       <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/fennec.webp" alt="Fennec Fox">
-    <div class="card-content">
-        <h3 class="fix-stroke">Fennec Fox</h3>
-    </div>
-</div>
-     <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/HedgehogPet.webp" alt="Massive Hedgehog (31.09 kg)">
-    <div class="card-content">
-        <h3 class="fix-stroke">Massive Hedgehog</h3>
-    </div>
-</div>
-    <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Snail_Pet.webp" alt="Massive Snail (24.22 kg)">
-    <div class="card-content">
-        <h3 class="fix-stroke">Massive Snail</h3>
-    </div>
-</div>
-    <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/GreyMouse.webp" alt="Massive Grey Mouse (24.61 kg)">
-    <div class="card-content">
-        <h3 class="fix-stroke">Massive Grey Mouse</h3>
-    </div>
-</div>
-   <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Squirrel_Icon.webp" alt="Massive Squirrel (20.67 kg)">
-    <div class="card-content">
-        <h3 class="fix-stroke">Massive Squirrel</h3>
-    </div>
-</div>
-  <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/mushroom%20(1).webp" alt="Mushroom">
-    <div class="card-content">
-        <h3 class="fix-stroke">Mushroom</h3>
-    </div>
-</div>
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/sugarapple.png" alt="sugarapple">
-    <div class="card-content">
-        <h3 class="fix-stroke">Sugar Apple</h3>
-    </div>
-</div> 
-  
- <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/grape%20(1).webp" alt="Grape">
-    <div class="card-content">
-        <h3 class="fix-stroke">Grape</h3>
-    </div>
-</div>
-  
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Dragon_Pepper_Produce.webp" alt="Dragon_Pepper">
-    <div class="card-content">
-        <h3 class="fix-stroke">Dragon Pepper</h3>
-    </div>
-</div>
-  
- <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Friendship_Pot.webp" alt="Grape">
-    <div class="card-content">
-        <h3 class="fix-stroke">Friendship Pot</h3>
-    </div>
-</div> 
-  
-  <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/ember.webp" alt="Ember">
-    <div class="card-content">
-        <h3 class="fix-stroke">Ember Lily</h3>
-    </div>
-</div>
-  
-  <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/disco.webp" alt="Disco">
-    <div class="card-content">
-        <h3 class="fix-stroke">Disco Bee</h3>
-    </div>
-</div>
-  
-    <div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/butterfly.webp" alt="Butterfly">
-    <div class="card-content">
-        <h3 class="fix-stroke">Butterfly Pet</h3>
-    </div>
-</div>
-  
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/mango.webp" alt="Mango">
-    <div class="card-content">
-        <h3 class="fix-stroke">Mango</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/dragonfruit.webp" alt="Dragonfruit">
-    <div class="card-content">
-        <h3 class="fix-stroke">Dragonfruit</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/cactus.webp" alt="Cactus">
-    <div class="card-content">
-        <h3 class="fix-stroke">Cactus</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/coconut.webp" alt="Coconut">
-    <div class="card-content">
-        <h3 class="fix-stroke">Coconut</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/bamboo.webp" alt="Bamboo">
-    <div class="card-content">
-        <h3 class="fix-stroke">Bamboo</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/apple.webp" alt="Apple">
-    <div class="card-content">
-        <h3 class="fix-stroke">Apple</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/pumpkin.webp" alt="Pumpkin">
-    <div class="card-content">
-        <h3 class="fix-stroke">Pumpkin</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/watermelon.webp" alt="Watermelon">
-    <div class="card-content">
-        <h3 class="fix-stroke">Watermelon</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/daffodil.webp" alt="Daffodil">
-    <div class="card-content">
-        <h3 class="fix-stroke">Daffodil</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/corn.webp" alt="Corn">
-    <div class="card-content">
-        <h3 class="fix-stroke">Corn</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/tomato.webp" alt="Tomato">
-    <div class="card-content">
-        <h3 class="fix-stroke">Tomato</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/orange.webp" alt="Orange">
-    <div class="card-content">
-        <h3 class="fix-stroke">Orange</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/blueberry.webp" alt="Blueberry">
-    <div class="card-content">
-        <h3 class="fix-stroke">Blueberry</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/carrot.webp" alt="Carrot">
-    <div class="card-content">
-        <h3 class="fix-stroke">Carrot</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/flowerpack.webp" alt="Flower Pack">
-    <div class="card-content">
-        <h3 class="fix-stroke">Flower Pack</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/beanstalk.png" alt="Beanstalk">
-    <div class="card-content">
-        <h3 class="fix-stroke">Beanstalk</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/cacao.webp" alt="Cacao">
-    <div class="card-content">
-        <h3 class="fix-stroke">Cacao</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/pepper.webp" alt="Pepper">
-    <div class="card-content">
-        <h3 class="fix-stroke">Pepper</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/mushroom.webp" alt="Mushroom">
-    <div class="card-content">
-        <h3 class="fix-stroke">Mushroom</h3>
-    </div>
-</div>
-
-<div class="card">
-    <div class="circle"></div>
-    <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/grape.webp" alt="Grape">
-    <div class="card-content">
-        <h3 class="fix-stroke">Grape</h3>
-    </div>
-</div>
-
-    <div class="card">
+    <div class="card-container">
+    <div class="card" id="card18">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Raccoon1.png" alt="Raccoon">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/disco.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Raccoon</h3>
+            <h3 class="fix-stroke">Disco Bee</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card15">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/DragonFly1.png" alt="Dragon Fly">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Raccoon1.png" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Dragon Fly</h3>
+            <h3 class="fix-stroke">Racoon Pet</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card15">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Red_Fox1.png" alt="Red Fox">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/mimic.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Red Fox</h3>
+            <h3 class="fix-stroke">Mimic Octopus</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card17">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Queen_bee.webp" alt="Queen Bee">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/butterfly.webp" alt="Toggle Image">
+        <div class="card-content">
+            <h3 class="fix-stroke">Butterfly Pet</h3>
+        </div>
+    </div>
+    <div class="card" id="card17">
+        <div class="circle"></div>
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/ScarletMacaw.webp" alt="Toggle Image">
+        <div class="card-content">
+            <h3 class="fix-stroke">Scarlet Macaw</h3>
+        </div>
+    </div>
+    <div class="card" id="card17">
+        <div class="circle"></div>
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Chicken_Zombie.webp" alt="Toggle Image">
+        <div class="card-content">
+            <h3 class="fix-stroke">Zombie Chicken</h3>
+        </div>
+    </div>
+    <div class="card" id="card16">
+        <div class="circle"></div>
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/DragonFly1.png" alt="Toggle Image">
+        <div class="card-content">
+            <h3 class="fix-stroke">Dragonfly Pet</h3>
+        </div>
+    </div>
+        <div class="card" id="card19">
+        <div class="circle"></div>
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Queen_bee.webp" alt="Toggle Image">
         <div class="card-content">
             <h3 class="fix-stroke">Queen Bee</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card19">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Chicken_Zombie.webp" alt="Chicken Zombie">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Red_Fox1.png" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Chicken Zombie</h3>
+            <h3 class="fix-stroke">Red Fox</h3>
         </div>
     </div>
-    <div class="card">
+    
+    <div class="card" id="card19">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Plants1.png" alt="Plants">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/PitcherPlant.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">282 B￠(Plants)</h3>
+            <h3 class="fix-stroke">Pitcher Plant</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card13">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Pumpkin_seed.webp" alt="Pumpkin Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/6_candy_blossom.png" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Pumpkin Seed</h3>
+            <h3 class="fix-stroke">Candy Blossom</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card13">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Apple_seed.webp" alt="Apple Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/ElephantEars.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Apple Seed</h3>
+            <h3 class="fix-stroke">Elephant Ears</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card18">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Bamboo_seed.webp" alt="Bamboo Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Dragon_Pepper_Produce.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Bamboo Seed</h3>
+            <h3 class="fix-stroke">Dragon Pepper</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card12">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/CoconutSeed.webp" alt="Coconut Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/MoonMelon.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Coconut Seed</h3>
+            <h3 class="fix-stroke">Moon Melon</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card12">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Dragonfruit_seed.webp" alt="Dragonfruit Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/SunflowerSeed.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Dragonfruit Seed</h3>
+            <h3 class="fix-stroke">Sunflower Seed</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card13">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Strawberry.webp" alt="Strawberry">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/SummerSeedPack.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Strawberry</h3>
+            <h3 class="fix-stroke">Summer Seed Pack</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card12">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Watermelon_seed.webp" alt="Watermelon Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/sugarapple.png" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Watermelon Seed</h3>
+            <h3 class="fix-stroke">Sugar Apple</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card11">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Daffodil_seed.webp" alt="Daffodil Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/ember.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Daffodil Seed</h3>
+            <h3 class="fix-stroke">Ember Lily</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card10">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Corn_seed.webp" alt="Corn Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/beanstalk.png" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Corn Seed</h3>
+            <h3 class="fix-stroke">Beanstalk</h3>
         </div>
     </div>
-    <div class="card">
+    <div class="card" id="card11">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/SeedTomato.webp" alt="Tomato Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Feijoa.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Tomato Seed</h3>
+            <h3 class="fix-stroke">Feijoa</h3>
         </div>
     </div>
-      <div class="card">
+    <div class="card" id="card11">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/SeedOrangeTulip.webp" alt="Orange Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Loquat.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Seed Orange Tulip</h3>
+            <h3 class="fix-stroke">Loquat</h3>
         </div>
     </div>
-      <div class="card">
+    <div class="card" id="card11">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/SeedBluebbery.webp" alt="Bluebbery Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/PricklyPear.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Seed Bluebbery</h3>
+            <h3 class="fix-stroke">Prickly Pear</h3>
         </div>
     </div>
-        <div class="card">
+    <div class="card" id="card11">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/SeedStrawberry.webp" alt="Seed Strawberry">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/BellPepper.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Seed Strawberry</h3>
+            <h3 class="fix-stroke">Bell Pepper</h3>
         </div>
     </div>
-   <div class="card">
+    <div class="card" id="card9">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/Super_Seed.webp" alt="Seed Strawberry">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/cacao.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">Super Seed</h3>
+            <h3 class="fix-stroke">Cacao</h3>
         </div>
     </div>
-          <div class="card">
+    <div class="card" id="card9">
         <div class="circle"></div>
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/6_candy_blossom.png" alt="Tomato Seed">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/pepper.webp" alt="Toggle Image">
         <div class="card-content">
-            <h3 class="fix-stroke">6 Candy Blossom</h3>
+            <h3 class="fix-stroke">Pepper</h3>
         </div>
+    </div>
+    <div class="card" id="card9">
+        <div class="circle"></div>
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/mushroom.webp" alt="Toggle Image">
+        <div class="card-content">
+            <h3 class="fix-stroke">Mushroom</h3>
+        </div>
+    </div>
+    <div class="card" id="card9">
+        <div class="circle"></div>
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/grape.webp" alt="Toggle Image">
+        <div class="card-content">
+            <h3 class="fix-stroke">Grape</h3>
+         </div>
     </div>
       </div>
 
